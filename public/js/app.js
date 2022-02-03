@@ -1,4 +1,4 @@
-console.log("Connect To The Main Page....");
+//console.log("Connect To The Main Page....");
 
 const weatherForm = document.querySelector("form");
 const searchTerm = document.querySelector("input");
