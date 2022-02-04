@@ -10,6 +10,8 @@ console.log(path.join(__dirname, "../public")); */
 
 const app = express();
 
+const port = process.env.PORT || 3001;
+
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templetes/views");
@@ -75,8 +77,8 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-  console.log("Port Started On 3001");
+app.listen(port, () => {
+  console.log("Port Started On " + port);
 });
 
 /* 
